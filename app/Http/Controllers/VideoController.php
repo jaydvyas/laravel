@@ -35,15 +35,3 @@ class VideoController extends Controller
             ->save("merge.mp4");
     }
 }
-
-//        FFMpeg::openUrl("https://www.youtube.com/watch?v=dXOmYlblCpA");
-//        FFMpeg::fromDisk("assets")->open("1703760802.mp4");
-//        FFMpeg::open("C:\Users\Bhakti.Pawar\Downloads\sd.mp4");
-//        FFMpeg::openUrl('https://pixabay.com/videos/mountains-nature-landscape-clouds-48873/');
-//        ->onProgress(function ($percentage, $remaining, $rate) {
-//            echo "{$remaining} seconds left at rate: {$rate}";
-//        })
-//        ->addFilter(function (VideoFilters $filters) {
-//            $filters->resize(new \FFMpeg\Coordinate\Dimension(640, 480));
-//        })
-//        ->resize(640, 480)
