@@ -44,6 +44,16 @@ return [
             'throw' => false,
         ],
 
+        "assets" => [
+            "driver" => "local",
+            "root" => storage_path('assets'),
+        ],
+
+        "songs" => [
+            "driver" => "local",
+            "root" => storage_path('songs'),
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

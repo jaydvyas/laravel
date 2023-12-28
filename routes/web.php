@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BooksController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +32,7 @@ Route::get("download{file}",[BooksController::class,"download"])->name("download
 Route::get("/view/{id}",function($id){
     return view("view",["file"=>$id]);
 })->name("view");
+
+Route::get("/video",[VideoController::class,"play"]);
+
+Route::get("/join",[VideoController::class,"join"]);
