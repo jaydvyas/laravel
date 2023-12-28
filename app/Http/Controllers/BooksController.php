@@ -19,22 +19,16 @@ class BooksController extends Controller
         $req->file->move("assets",$fileName);
         $table = DB::table("books")->insert(["Book Name"=>$bookName,"amount"=>$amount,"Published Date"=>$date,"Author Name"=>$author,"file"=>$fileName]);
         if($table){
-//            return view("viewBooks");
-            echo "Book Saved. $fileName";
-//            FFMpeg::open($req->file("file"));
-//            print_r($file);
 
-//            print_r($req->all());
+            echo "Book Saved. $fileName";
+
         }else{
             echo "Some technical issue occurred";
         }
-//        return $bookName.$date.$amount.$author;
     }
 
     public function getBooks(){
         $table = DB::table("books")->get();
-//        return $table;
-//        $table = assoc
         return view("viewBooks",["data"=>$table]);
     }
 

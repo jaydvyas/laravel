@@ -12,11 +12,3 @@
     <input type="file" name="file" id="file"><br><br>
     <input type="submit" name="submit">
 </form>
-{{--@php--}}
-{{--$url = "https://www.youtube.com/watch?v=mCOOddO4kkY";--}}
-{{--$vd = (new Cohensive\OEmbed\OEmbed)->get($url);--}}
-{{--@endphp--}}
-{{--<video width="320" height="240" controls>--}}
-{{--    <source src={{$vd}} type="video/mp4">--}}
-{{--</video>--}}
-{{--{{$vd}}--}}
